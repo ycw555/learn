@@ -9,6 +9,9 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 【单行显示日志】 git log --pretty=oneline
 
 【】git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
+	git diff 查看本地修改的文件和暂存起来文件的差异
+	git diff --cached查看已经暂存起来的文件和上次提交的差异
+	
 
 【】git reflog用来记录你的每一次命令
 
