@@ -1,0 +1,20 @@
+【撤销本地修改】修改了本地工作区的文件，未git add的撤销使用 git checkout -- filename
+git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+
+【撤销暂存区】修改了本地工作区的文件，已经git add而未git commit的撤销使用git reset --hard [filename]
+
+【撤销提交】 git reset --hard HEAD~到上一个版本(最近一次commit之前)
+			 git reset --hard 3628164回到指定版本	
+			
+【单行显示日志】 git log --pretty=oneline
+
+【】git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
+
+【】git reflog用来记录你的每一次命令
+
+【stash】git stash把当前分支上的本地项目暂存起来（前提是没有commit的） 
+		 git stash list
+		 git stash apply回复暂存
+		 git stash drop删除暂存
+		 git stash pop恢复并删除暂存
+		 git stash apply stash@{0}指定删除暂存
